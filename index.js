@@ -91,13 +91,14 @@ if (option == "buy") {
           continue;
     }
 } else if (option == "fill") {
-    addIngredients();
-    
+    addIngredients();   
     continue;
 } else if (option == "take") {
     console.log("I gave you $" + money);
-    money = 0;
-    
+    money = 0; 
+    continue;
+} else if(option == "joke") {
+    joke();
     continue;
 } else if (option == "remaining") {
     currentIngredients();
@@ -127,5 +128,72 @@ function currentIngredients() {
     console.log("$" + money + " of money");
     
 }
+
+function joke() {
+  let name = prompt("What is the perfect name for a sofisticated Coffee Machine");
+    if (name == "Soffee") {
+        console.log("How the hell did you find it?");
+        console.log("");
+        console.log("Are you a wizard?");
+        console.log("");
+    } else {
+        console.log("No");
+        console.log("");
+        console.log("Its Soffee");
+        console.log("");
+        console.log("Its from the combination of sofisticated and coffee");
+        console.log("");
+        console.log("hehe");
+        console.log("");
+    }
+    
+  let like = prompt("Did you like my joke?");
+    if (like == "yes" || like == "Yes") {
+        console.log("Damn I'm good!!!");
+        console.log("");
+    } else if (like == "no" || like == "No") {
+        console.log("And what exactly did you expect?");
+        console.log("");
+        console.log("I'm not the Joker");
+        console.log("");
+        console.log("I'm just a coffee machine");
+        console.log("");
+        console.log("Anyways");
+        console.log("");
+        console.log("Leave now because other clients are watting");
+        console.log("");
+        console.log("You are not the center of the world");
+        console.log("");
+        console.log("NEEEEEEEXT");
+    } else {
+        let likeplease = prompt(`Answer the question with a yes or no please\nJEEEESUS!!!`);
+        if (likeplease == "yes" || likeplease == "Yes") {
+        console.log("Damn I'm good!!!");
+        console.log("");
+    } else if (likeplease == "no" || likeplease == "No") {
+        console.log("And what exactly did you expect?");
+        console.log("");
+        console.log("I'm not the Joker");
+        console.log("");
+        console.log("I'm just a coffee machine");
+        console.log("");
+        console.log("Anyways");
+        console.log("");
+        console.log("Leave now because other clients are watting");
+        console.log("");
+        console.log("You are not the center of the world");
+        console.log("");
+        console.log("NEEEEEEEXT");
+    } else {
+        console.log("Ok... you are an Idiot...");
+        console.log("");
+        console.log("The coffee won't heal your Idiocity");
+        console.log("");   
+        console.log("Leave now...");
+        console.log("");    
+        console.log("NEEEEEEEXT");
+    }
+  }
+}  
 
 
